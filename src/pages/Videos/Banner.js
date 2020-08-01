@@ -35,12 +35,16 @@ export default function Banner() {
           </a>
         </Col>
         <Col className="right-col" xs={24} md={12} lg={13}>
+        {/*
           <h3 className="testimonial-text">Testimonial</h3>
+        
+        */}
           <ClickAwayListener onClickAway={() => setPlay(false)}>
             <ReactPlayer
               style={{
                 width: "100%",
                 height: "80%",
+                boxShadow: "0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12)"
               }}
               onPlay={() => setPlay(true)}
               onPause={() => setPlay(false)}

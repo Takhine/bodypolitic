@@ -31,7 +31,7 @@ const NavMenu = ({ showCovid, hideCovid, showComm, hideComm }) => {
         </NavLink>
       </li>
       <li className="navItem">
-          <NavLink exact to="/videos">
+          <NavLink exact to="/videos" activeClassName="selected">
           <p className="nav-link">Videos</p>
         </NavLink>
       </li>

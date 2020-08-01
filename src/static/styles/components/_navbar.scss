@@ -66,6 +66,11 @@
                 min-width: 500px;
             }
             .navItem{
+                .selected{
+                    .nav-link{
+                        color: $dark-blue;
+                    }
+                }
                 .nav-link{
                     color: $light-blue;
                     font-weight: 600;
@@ -74,9 +79,6 @@
                     @include xxxl{
                         font-size: 14px;
                     }
-                }
-                .active-link{
-                    color: $dark-blue;
                 }
             }
 

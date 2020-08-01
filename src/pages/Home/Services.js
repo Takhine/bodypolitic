@@ -237,8 +237,7 @@ export default function Services() {
               <h4 className="card-heading">Herbs & Diet</h4>
               <Fade>
                 <p className="card-description">
-                  Herbs and diet support our bodies from the inside out. Dietary
-                  changes are often all that is necessary to make major changes
+                  Dietary changes are often all that is necessary to make major changes
                   in your health. Traditional Chinese herbal formulas and
                   dietary supplements may also be used to support your body in
                   the process of becoming more and more balanced.

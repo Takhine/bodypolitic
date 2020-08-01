@@ -40,6 +40,7 @@ const Navbar = (props) => {
 
   const mobileMenu = useMediaQuery("(min-width: 1200px)");
 
+  const pathName = props.location.pathname;
   const navRef = useRef();
   navRef.current = navBackground;
   useEffect(() => {
@@ -134,7 +135,7 @@ const Navbar = (props) => {
       >
         <Menu
           style={{ width: 256 }}
-          defaultSelectedKeys={[""]}
+          defaultSelectedKeys={[`${pathName}`]}
           mode="inline"
           theme="light"
         >
