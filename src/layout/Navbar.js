@@ -8,7 +8,7 @@ import {
   Slide,
   useMediaQuery,
 } from "@material-ui/core";
-import { Menu, Button, Drawer, Tooltip } from "antd";
+import { Menu, Button, Drawer } from "antd";
 import { NavLink } from "react-router-dom";
 import NavMenu from "./NavMenu";
 import CovidModal from "../modals/CovidModal";

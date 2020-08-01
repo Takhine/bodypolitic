@@ -46,7 +46,7 @@ export default function Banner() {
               onPause={() => setPlay(false)}
               height={isMobile ? "250px" : "400px"}
               width="100%"
-              url={`https://www.youtube.com/watch?v=JpV3ZMlofh4`}
+              url={`https://www.youtube.com/watch?v=NV0lYX46Hj8`}
               controls={true}
               // light={thumbnail}
               playIcon={null}

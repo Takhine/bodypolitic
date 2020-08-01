@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Divider, Tooltip } from "antd";
+import { Row, Col, Divider } from "antd";
 import { NavLink } from "react-router-dom";
 
 // Images

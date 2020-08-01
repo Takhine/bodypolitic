@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router";
-import { Tooltip } from "antd";
 
 const NavMenu = ({ showCovid, hideCovid, showComm, hideComm }) => {
   const handleClick = () => {
