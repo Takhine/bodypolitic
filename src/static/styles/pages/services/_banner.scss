@@ -1,0 +1,137 @@
+#services {
+    .services-banner {
+      position: relative;
+      padding-top: 80px;
+      @include md {
+        padding-top: 100px;
+      }
+      @include xxl {
+        padding-top: 120px;
+      }
+      .light-background {
+        background-color: $fade-blue;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+        height: 100%;
+        @include xxl {
+          height: 85%;
+        }
+      }
+      .services-row{
+  
+      }
+      .left-col {
+        padding: 12px;
+        position: relative;
+        padding-bottom: 20px;
+        @include msm{
+          padding-left: 32px;
+      }
+        @include lg {
+          padding-left: 120px;
+          padding-bottom: 40px;
+        }
+        @include xxl {
+          padding-left: 140px;
+        }
+        .banner-heading {
+          color: $dark-blue;
+          font-size: 40px;
+          font-weight: 500;
+          margin-bottom: 16px;
+          line-height: 1;
+          @include msm {
+            font-size: 46px;
+          }
+          @include md {
+            font-size: 50px;
+          }
+          @include lg {
+            font-size: 54px;
+            font-weight: 700;
+            margin-bottom: 18px;
+          }
+          @include xl {
+            font-size: 64px;
+          }
+          @include xxl {
+            font-size: 78px;
+            margin-bottom: 24px;
+          }
+          @include xxxl {
+            font-size: 60px;
+          }
+        }
+        .banner-subheading {
+          color: $warm-blue;
+          font-weight: 500;
+          font-size: 14px;
+          margin-bottom: 16px;
+  
+          @include lg {
+            font-size: 16px;
+          font-weight: 600;
+            margin-bottom: 18px;
+  
+          }
+          @include xxl {
+            font-size: 18px;
+            margin-bottom: 24px;
+          }
+          @include xxxl {
+            font-size: 22px;
+          }
+        }
+        .buttons-container {
+          .main-button,
+          .service-button {
+            margin-right: 8px;
+            margin-bottom: 8px;
+            @include md {
+              margin-right: 12px;
+              margin-bottom: 12px;
+            }
+            @include xl {
+              margin-right: 16px;
+              margin-bottom: 16px;
+            }
+          }
+          .service-button {
+            @include primary-button;
+            background-color: $light-blue;
+            border-color: $light-blue;
+          }
+          .main-button {
+              @include primary-button;
+              background-color: $dark-blue;
+              border-color: $dark-blue;
+            }
+        }
+      }
+      .right-col {
+        padding: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+        @include msm {
+          padding-right: 32px;
+          padding-left: 12px;
+        }
+        @include lg {
+          padding-right: 120px;
+          padding-left: 16px;
+        }
+        @include xxl {
+          padding-right: 140px;
+        }
+        .image-container {
+          .banner-image {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  

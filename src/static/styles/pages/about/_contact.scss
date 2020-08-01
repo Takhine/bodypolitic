@@ -1,0 +1,53 @@
+#about{
+    .contact{
+        .left-col{
+          @include lg{
+            background-image: url('/images/banners/contact-banner.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: $transition-main;
+            &:hover{
+                transform: scale(1.1);
+                transition: $transition-main;
+            }
+          }
+        }
+        .right-col{
+            background-color: $fade-blue;
+            padding: 12px;
+            padding-top: 24px;
+            @include msm {
+              padding-right: 32px;
+              padding-left: 32px;
+            }
+            @include lg {
+              padding-right: 120px;
+              padding-left: 80px;
+              padding-top: 32px;
+            }
+            @include xxl {
+              padding-right: 140px;
+              padding-left: 120px;
+            }
+            .contact-title{
+                color: $dark-blue;
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                line-height: 1;
+                @include msm {
+                  font-size: 32px;
+                }
+                @include lg {
+                  font-size: 40px;
+                  font-weight: 700;
+                  margin-bottom: 18px;
+                }
+            }
+            .submit-button{
+                @include square-button;
+            }
+        }
+    }
+}

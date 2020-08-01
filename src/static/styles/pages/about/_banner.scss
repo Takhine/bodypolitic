@@ -1,0 +1,108 @@
+#about{
+    .about-banner{
+        min-height: 60vh;
+        @include sub-section-container;
+        position: relative;
+        padding-top: 80px;
+        @include md {
+          padding-top: 100px;
+        }
+        @include xxl {
+          padding-top: 120px;
+        }
+        .left-col{
+          background-color: $dark-blue;
+          padding-right: 8px;
+          padding-left: 8px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          border-radius: 18px;
+          @include md{
+          padding-left: 18px;
+          }
+          @include lg{
+            padding-left: 8px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 0;
+            background-color: unset;
+          }
+        }
+        .dark-background {
+            background-color: $dark-blue;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            left: 0;
+            height: 100%;
+            display: none;
+            @include lg{
+            display: block;
+            }
+            @include md {
+              width: 50%;
+            }
+          }
+        .banner-heading {
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            line-height: 1;
+            @include msm {
+              font-size: 46px;
+            }
+            @include md {
+              font-size: 50px;
+            }
+            @include lg {
+              font-size: 54px;
+              font-weight: 700;
+              margin-bottom: 18px;
+            }
+            @include xl {
+              font-size: 64px;
+            }
+            @include xxl {
+              font-size: 78px;
+              margin-bottom: 24px;
+            }
+            @include xxxl {
+              font-size: 60px;
+            }
+          }
+          .banner-subheading {
+            color: white;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 16px;
+            max-width: 450px;
+            @include lg {
+              font-size: 16px;
+                font-weight: 600;
+              margin-bottom: 18px;
+              max-width: 300px;
+            }
+            @include xl{
+              max-width: 400px;
+            }
+            @include xxl {
+              font-size: 18px;
+              margin-bottom: 24px;
+              max-width: 600px;
+            }
+            @include xxxl {
+              font-size: 22px;
+            }
+          }
+
+          .usp-container{
+              justify-content: flex-start;
+              margin-top: 32px;
+              .usp{
+                  color: $dark-orange;
+              }
+          }
+    }
+}

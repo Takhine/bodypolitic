@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+
+@import './utilities/variables';
+@import './utilities/breakpoints';
+@import './utilities/mixins';
+@import './utilities/colors';
+
+@import './base';
+
+
+@import './components/navbar.scss';
+@import './components/footer.scss';
+@import './components/section.scss';
+
+
+@import './pages/home/banner.scss';
+@import './pages/home/services.scss';
+@import './pages/home/testimonials.scss';
+@import './pages/home/benefits.scss';
+
+@import './pages/services/banner.scss';
+@import './pages/services/process.scss';
+@import './pages/services/acupuncture.scss';
+@import './pages/services/herbal.scss';
+@import './pages/services/body.scss';
+@import './pages/services/community.scss';
+
+@import './pages/about/banner.scss';
+@import './pages/about/personnel.scss';
+@import './pages/about/contact.scss';
+
+@import './pages/videos/banner.scss';
+@import './pages/videos/gallery.scss';
+@import './pages/videos/videomodal.scss';
+
+
+
+
+
+
+
+
+
+
+

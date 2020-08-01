@@ -1,0 +1,54 @@
+#homepage{
+    .testimonials{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        @include md{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        .client-heading{
+            margin-bottom: 0;
+        }
+        .client-subheader{
+            color: white;
+        }
+        @include sub-section-container;
+        background-color: $dark-blue;
+        .client-row{
+            align-items: flex-end;
+            .client-card{
+                margin-bottom: 8px;
+                border: none;
+                border-radius: 4px;
+                box-shadow: $dark-box-shadow;
+                .ant-card-meta{
+                    .client-profile{
+                        border: 1px solid $warm-blue;
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .card-header{
+                        .client-name{
+                            margin: 0;
+                            font-weight: 600;
+                        }
+                        .client-date{
+                            margin: 0;
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+                    }
+                    
+                }
+                .client-message{
+                    color: $dark-blue;
+                    font-style: italic;
+                    margin-top: 12px;
+                    @include md{
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+#navbar{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 60px;
+    padding: 0 12px;
+    right: unset;
+    color: white;
+    @include msm{
+        height: 65px;
+        padding: 0 32px;
+    }
+    @include lg{
+        padding: 0 120px;
+    }
+    @include xxl{
+        padding: 0 140px;
+    }
+    @include xxxl{
+        height: 70px;
+    }
+    .grow{
+        display: flex;
+        flex-grow: 1;
+    }
+    .consultation-button{
+        height: 100%;
+        border: none;
+        background-color: $dark-orange;
+        height: 60px;
+        @include md{
+            height: 65px;
+        }
+        @include xxl{
+            padding: 4px 30px;
+        }
+        @include xxxl{
+            height: 70px;
+        }
+        span{
+            color: white;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        }
+    }
+    .toolbar{
+        padding: 0;
+        .menuItem{
+            margin-right: 12px;
+            color: white;
+            font-weight: 400;
+        }
+        .navmenu{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            @include xl{
+                min-width: 450px;
+            }
+            @include xxl{
+                min-width: 500px;
+            }
+            .navItem{
+                .nav-link{
+                    color: $light-blue;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin: 0;
+                    @include xxxl{
+                        font-size: 14px;
+                    }
+                }
+                .active-link{
+                    color: $dark-blue;
+                }
+            }
+
+        }
+    }
+    .logo{
+        width: 150px;
+        cursor: pointer;
+        @include md{
+            width: 180px;
+        }
+        @include xxxl{
+            width: 200px;
+        }
+    }
+}
+
+.sidebar{
+    .ant-drawer-content-wrapper{
+        .ant-drawer-body{
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.footer {
+    @include sub-section-container;
+    padding-top: 64px;
+    background-color: $dark-blue;
+    .copyright {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      color: white;
+      display: block;
+    }
+    .footer-row {
+      .footer-col {
+        margin-top: 32px;
+        @include md {
+          margin-top: 24px;
+        }
+        @include lg {
+          margin-top: 12px;
+        }
+      }
+      .ant-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include md {
+          display: block;
+        }
+      }
+    }
+    .brand-container {
+      padding: 0 12px;
+      .footer-logo {
+        max-width: 100px;
+        @include md {
+          max-width: 120px;
+        }
+        @include xl {
+          max-width: 170px;
+        }
+      }
+      .social-container {
+        justify-content: space-between;
+        max-width: 140px;
+        margin-top: 24px;
+        padding: 0;
+        @include md {
+          max-width: 100px;
+        padding: 0 4px;
+  
+        }
+        @include xl {
+          padding: 0 8px;
+          max-width: 170px;
+        }
+        .social-image {
+          height: 100%;
+          width: auto;
+          max-height: 16px;
+          margin-right: 8px;
+          @include md {
+            height: 100%;
+            width: auto;
+            max-height: 18px;
+          }
+          @include xl {
+            max-height: unset;
+          }
+        }
+      }
+    }
+    .contact-header {
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: $main-font;
+      @include lg {
+        margin-top: -10px;
+        font-size: 20px;
+      }
+      @include xl {
+        font-size: 24px;
+      }
+    }
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      li {
+        .link {
+          color: white;
+          text-transform: uppercase;
+          font-family: $heading-font;
+          margin-bottom: 12px;
+          font-weight: 500;
+          font-size: 13px;
+          display: block;
+          text-align: center;
+          @include lg {
+            text-align: left;
+          }
+        }
+        .contact {
+          color: white;
+          font-family: $heading-font;
+          margin-bottom: 12px;
+          display: block;
+          text-align: center;
+          @include md {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  

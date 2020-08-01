@@ -1,0 +1,148 @@
+#homepage {
+  .treatments {
+    @include sub-section-container;
+    .services-heading {
+      text-align: center;
+      .service-description {
+        text-align: center;
+        max-width: 900px;
+        margin: auto;
+      }
+    }
+    .services-row {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      .secondary-services {
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
+      .secondary-card {
+        .arrow-button {
+          @include reverse-primary-button;
+          width: 80px;
+          img {
+            width: 100%;
+            max-width: 20px;
+          }
+        }
+      }
+      .left-col,
+      .right-col {
+        @include xl {
+          max-width: 40%;
+        }
+        .service-card,
+        .secondary-card {
+          padding: 12px;
+          @include xl {
+            padding: 24px;
+          }
+          .card-heading {
+            text-align: center;
+          }
+          .ant-card-body {
+            padding: 0;
+            @include msm {
+              padding: 24px;
+            }
+          }
+        }
+      }
+    }
+    @at-root .ailment-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 12px;
+      @include msm {
+        margin-top: 16px;
+      }
+      @include xl {
+        margin-top: 22px;
+      }
+      .ailment {
+        font-weight: 600;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $dark-blue;
+        margin-bottom: 12px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        .ailment{
+          justify-content: flex-start;
+        }
+        @include msm {
+          font-size: 13px;
+          margin-bottom: 18px;
+        }
+        @include xl {
+          font-size: 15px;
+          margin-bottom: 24px;
+        }
+        @include xxxl {
+          font-size: 17px;
+        }
+        img {
+          margin-right: 8px;
+          width: 30px;
+          @include msm {
+            margin-right: 12px;
+          }
+          @include lg {
+            margin-right: 16px;
+          }
+          @include xxl {
+            margin-right: 18px;
+          }
+        }
+      }
+      .modal-ailment {
+        @extend .ailment;
+        font-size: 10px;
+        @include msm {
+          font-size: 12px;
+          margin-bottom: 18px;
+        }
+        @include xl {
+          font-size: 14px;
+          margin-bottom: 24px;
+        }
+        @include xxxl {
+          font-size: 16px;
+        }
+      }
+    }
+    .full-list {
+      @include primary-button;
+    }
+  }
+}
+
+.list-modal {
+  .ant-modal {
+    .ant-modal-content {
+      .list-content {
+        .list-header {
+          font-family: $main-font;
+          font-weight: 500;
+          letter-spacing: 1px;
+          color: $dark-blue;
+          @include msm {
+            font-size: 12px;
+          }
+          @include xl {
+            font-size: 14px;
+          }
+          @include xxxl {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+#services{
+    .herbal-diet{
+        @include sub-section-container;
+        background-color: $dark-blue;
+        padding-top: 40px;
+    padding-bottom: 40px;
+    @include lg {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include xl {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @include xxl {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+        .mobile{
+            display: block;
+            @include md{
+                display: none;
+            }
+        }
+        .desktop{
+            display: none;
+            @include md{
+                display: block;
+            }
+        }
+        .herbal-subheader{
+            color: white;
+        }
+        .herbal-description{
+            color: white;
+        }
+        .left-col{
+
+        }
+        .right-col{
+
+            .buttons-container{
+                .diet-button{
+                    @include primary-button;
+                    background-color: $dark-orange;
+                    border-color: $dark-orange;
+
+                }
+            }
+        }
+    }
+}

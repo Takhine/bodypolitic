@@ -1,0 +1,249 @@
+#services {
+    .process {
+      .process-row {
+        margin: 0;
+        @include xl {
+          margin-top: 80px;
+          margin-bottom: 80px;
+        }
+        @include xxl {
+          margin-top: 120px;
+          margin-bottom: 120px;
+        }
+        .left-col {
+          padding: 0;
+          position: relative;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          @include xl {
+            padding-left: 120px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+          }
+          @include xxl {
+            padding-left: 140px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+          }
+          .left-content {
+            display: flex;
+            .process-container {
+              @at-root .process-header {
+                font-family: $heading-font;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 10px;
+                color: $dark-blue;
+                @include msm {
+                  font-size: 12px;
+                }
+                @include xxxl {
+                  font-size: 14px;
+                }
+              }
+              @at-root .process-description {
+                font-family: $main-font;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: $dark-blue;
+                @include msm {
+                  font-size: 12px;
+                }
+                @include xl {
+                  font-size: 14px;
+                  max-width: 340px;
+                }
+                @include xxxl {
+                  font-size: 16px;
+                }
+              }
+              @at-root .process-list {
+                list-style: none;
+                padding: 0;
+                li {
+                  display: flex;
+                  align-items: flex-start;
+                  margin-bottom: 8px;
+                  img {
+                    width: 30px;
+                  }
+                }
+                .list-description {
+                  @extend .block-description;
+                }
+              }
+            }
+            .image-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .clinic-image {
+                @include md {
+                  max-width: 300px;
+                }
+                @include xxl {
+                  max-width: 400px;
+                }
+              }
+            }
+          }
+          .mobile-container {
+            display: flex;
+            @include xl {
+              display: none;
+            }
+          }
+          .mobile-header-container,
+          .mobile-container {
+            padding: 12px;
+            @include msm {
+              padding: 24px 32px;
+            }
+            @include lg {
+              padding: 32px 120px 32px;
+            }
+            .mobile-image,
+            .mobile-offer {
+              display: block;
+              @include msm {
+                display: none;
+              }
+            }
+            .mobile-offer {
+              display: flex;
+              justify-content: center;
+              @include msm {
+                display: none;
+              }
+              .offer-message {
+                font-weight: 600;
+                color: $dark-blue;
+              }
+            }
+            .mobile-right {
+              display: none;
+              @include rwd(600, 1199) {
+                display: block;
+              }
+              @include xl {
+                display: none;
+              }
+              .clinic-image {
+                width: 100%;
+              }
+            }
+          }
+          .mobile-header-container{
+            .offer-col{
+              display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            }
+          }
+          .mobile-container {
+            background-color: $fade-blue;
+          }
+        }
+        .right-col {
+          padding: 12px;
+          padding-left: 8px;
+          @include msm {
+            padding-right: 32px;
+            padding-left: 12px;
+          }
+          @include lg {
+            padding-right: 120px;
+            padding-left: 16px;
+          }
+          @include xxl {
+            padding-right: 140px;
+          }
+          @at-root .process-heading {
+            margin: 12px 0;
+            @include xl {
+              margin-top: -62px;
+            }
+            @include xxl {
+              margin-top: -72px;
+            }
+            .process-subheader {
+              line-height: 1.5;
+              font-weight: 700;
+              font-size: 16px;
+              @include msm {
+                font-size: 18px;
+              }
+              @include md {
+                font-size: 24px;
+              }
+              @include lg {
+                font-size: 28px;
+              }
+              @include xl {
+                font-size: 32px;
+                line-height: 1.1;
+              }
+              @include xxl {
+                font-size: 36px;
+              }
+            }
+          }
+          .offer {
+            @at-root .offer-message {
+              color: $dark-blue;
+              margin: 14px 0;
+              letter-spacing: 0.7px;
+              @include md{
+              margin: 24px 0;
+              }
+              @include lg {
+                font-size: 16px;
+                max-width: 350px;
+              }
+              @include xl {
+                max-width: 400px;
+                margin: 32px 0;
+              }
+            }
+          }
+        }
+      }
+      .process-button {
+        @include primary-button;
+        margin-bottom: 12px;
+      }
+      .process-button2 {
+        @include orange-button;
+        margin-bottom: 12px;
+  
+      }
+      .mobile {
+        display: block;
+        @include xl {
+          display: none;
+        }
+      }
+      .desktop {
+        display: none;
+        @include xl {
+          display: block;
+        }
+      }
+      .light-background {
+        background-color: $fade-blue;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+        left: 0;
+        display: none;
+        @include xl {
+          display: block;
+          width: 80%;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,54 @@
+
+*, html, body{
+    font-family: $main-font;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading-font;
+}
+
+body{
+  overflow: overlay !important;
+}
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #252525; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fff; 
+      }
+
+
+      .mr-12{
+        margin-right: 12px;
+      }
+      .mr-16{
+        margin-right: 16px;
+      }
+      .ml-12{
+        margin-right: 12px;
+      }
+      .ml-16{
+        margin-right: 16px;
+      }
+
+      .ant-modal-mask{
+        z-index: 2000;
+      }
+
+      .ant-tooltip{
+        z-index: 2000;
+      }
+
+      .image-container{
+        img{
+          width:100%
+        }
+      }

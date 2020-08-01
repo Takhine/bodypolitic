@@ -1,0 +1,87 @@
+#homepage {
+    .benefits {
+      @include sub-section-container;
+      padding-top: 24px;
+      padding-bottom: 24px;
+  
+      .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          max-width: 600px;
+          width: 100%;
+        }
+      }
+      @include xxl {
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+      .benefits-row {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        .left-col,
+        .right-col {
+          @include xl {
+            max-width: 40%;
+          }
+        }
+      }
+      .benefits-heading {
+        text-align: center;
+      }
+      .benefit-card {
+        height: 100%;
+        .benefit-card-heading {
+          text-transform: uppercase;
+        }
+        .chinese-heading {
+          color: white;
+        }
+        .chinese-quote {
+          color: $dark-blue;
+        }
+        .chinese-heading,
+        .chinese-quote {
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          @include msm {
+            font-size: 14px;
+            margin-bottom: 12px;
+          }
+          @include xl {
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+          @include xxxl {
+            font-size: 18px;
+          }
+        }
+        .chinese-list {
+          list-style: none;
+          padding: 0;
+          li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            img {
+              width: 30px;
+            }
+          }
+        }
+        .learn-more {
+          @include square-button;
+          background-color: $dark-orange;
+          min-width: 100px;
+          padding: 2px 20px;
+          @include md {
+            height: 35px;
+            min-width: 120px;
+          }
+        }
+      }
+    }
+  }
+  

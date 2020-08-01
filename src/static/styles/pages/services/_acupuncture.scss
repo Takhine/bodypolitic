@@ -1,0 +1,93 @@
+#services {
+    .acupuncture {
+      @include sub-section-container;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      @include lg {
+        padding-bottom: 60px;
+        padding-top: 40px;
+      }
+      @include xl {
+        padding-bottom: 80px;
+        padding-top: 60px;
+      }
+      @include xxl {
+        padding-bottom: 120px;
+        padding-top: 80px;
+      }
+      .mobile {
+        display: block;
+        @include xl {
+          display: none;
+        }
+      }
+      .desktop {
+        display: none;
+        @include xl {
+          display: block;
+        }
+      }
+      .ant-carousel {
+        margin-bottom: 24px;
+        .image-carousel {
+          .slick-dots {
+            max-width: 300px;
+            margin: auto;
+            button {
+              &:before {
+                display: none;
+              }
+            }
+          }
+          .slick-slide {
+            text-align: center;
+            height: 360px;
+            line-height: 160px;
+            background: #364d79;
+            overflow: hidden;
+            h3 {
+              color: white;
+            }
+          }
+          .image-container{
+            .slide-image{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .left-col {
+        .acupuncture-description {
+          @include msm {
+            max-width: 450px;
+          }
+          @include xxl {
+            max-width: 500px;
+          }
+          @include xxxl {
+            max-width: 600px;
+          }
+        }
+        .type-col {
+          .type-description {
+            @include xl {
+              max-width: 200px;
+            }
+            @include xxl {
+              max-width: 250px;
+            }
+            @include xxxl {
+              max-width: 350px;
+            }
+          }
+        }
+        .schedule-button {
+          @include primary-button;
+        }
+      }
+      .right-col {
+        margin: auto;
+      }
+    }
+  }
+  

@@ -1,0 +1,116 @@
+#about {
+  .personnel {
+    .desktop {
+      display: none;
+      @include lg {
+        display: flex;
+      }
+    }
+    .personnel-name {
+      text-align: center;
+      @include lg {
+        text-align: left;
+      }
+    }
+    .mobile {
+      display: flex;
+      @include lg {
+        display: none;
+      }
+    }
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      @include lg {
+        justify-content: flex-end;
+        margin-bottom: 12px;
+      }
+      img {
+        width: 100%;
+        max-width: 400px;
+        @include lg {
+          max-width: 500px;
+        }
+      }
+    }
+    .julian-image {
+      @extend .image-container;
+      @include lg {
+        justify-content: flex-start;
+      }
+    }
+    .dark-background-left {
+      background-color: $dark-blue;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      left: 0;
+      height: 100%;
+      display: none;
+      @include lg {
+        display: block;
+      }
+      @include md {
+        width: 50%;
+      }
+    }
+    .dark-background-right {
+      background-color: $dark-blue;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      right: 0;
+      height: 100%;
+      display: none;
+      @include lg {
+        display: block;
+      }
+      @include md {
+        width: 50%;
+      }
+    }
+    .left-col,
+    .right-col {
+      .personnel-button {
+        @include primary-button;
+      }
+      .languanges-container {
+        display: flex;
+        align-items: center;
+        margin: 24px 0;
+        @include xl {
+          margin: 32px 0;
+        }
+        .personnel-languages {
+          margin-right: 12px;
+          margin-bottom: 0;
+        }
+      }
+      .personnel-languages {
+        font-size: 12px;
+        @include msm {
+          font-size: 14px;
+        }
+        @include xl {
+          font-size: 16px;
+        }
+        @include xxxl {
+          font-size: 18px;
+        }
+      }
+    }
+    .mona,
+    .julian {
+      position: relative;
+      @include sub-section-container;
+      background-color: $fade-blue;
+      @include lg {
+        background-color: unset;
+      }
+    }
+  }
+}

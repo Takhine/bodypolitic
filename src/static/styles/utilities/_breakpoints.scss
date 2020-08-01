@@ -1,0 +1,33 @@
+// Small smartphones (potrait view)
+
+$screen-xs-min: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 568px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Extra Large tablets and desktops
+$screen-xxl-min: 1600px;
+
+// Extra Large tablets and desktops
+$screen-xxxl-min: 1920px;
+
+// Custom Screen
+$screen-min: 420px;
+
+// Mui Grid breakpoints
+// Large screen Mui
+$mui-screen-lg-min:1280px;
+// Medium screen Mui
+$mui-screen-md-min:960px;
+// Small screen Mui
+$mui-screen-sm-min:600px;
+    

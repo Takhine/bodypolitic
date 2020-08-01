@@ -1,0 +1,136 @@
+#homepage {
+  .home-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+    .desktop-banner {
+      display: none;
+      @media (orientation: landscape) and (max-width: 992px) {
+        display: block;
+      }
+      @include lg {
+        display: block;
+        min-height: 100vh;
+      }
+    }
+    .mobile-banner {
+      height: 100vh;
+      width: auto;
+      display: block;
+      min-width: 100vw;
+      @media (orientation: landscape) and (max-width: 992px) {
+        display: none;
+      }
+      @include lg {
+        display: none;
+      }
+    }
+    .insurance-message{
+      color: white;
+      position: absolute;
+      right: 140px;
+      font-weight: 600;
+      text-decoration: underline;
+      right: 12px;
+      bottom: 12px;
+    @include msm{
+        right: 32px;
+        top: 80px;
+        bottom: unset;
+    }
+    @include lg{
+        right: 120px;
+    }
+    @include xxl{
+        right: 140px;
+    }
+    }
+    .banner-message {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      .main-message {
+        color: white;
+        font-family: $cursive-font;
+        font-size: 32px;
+        line-height: 1;
+        @include msm {
+          font-size: 38px;
+        }
+        @include md {
+          font-size: 45px;
+          line-height: 1.3;
+        }
+        @include lg {
+          font-size: 50px;
+          line-height: 1.3;
+        }
+        @include xl {
+          font-size: 54px;
+        }
+        @include xxl {
+          font-size: 56px;
+        }
+        @include xxxl {
+          font-size: 60px;
+        }
+      }
+      @at-root .usp-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .usp {
+          margin: 0;
+          text-transform: uppercase;
+          font-family: $heading-font;
+          font-weight: 700;
+          font-size: 12px;
+          @include lg {
+            font-size: 14px;
+          }
+          @include xxl {
+            font-size: 15px;
+          }
+        }
+        .lines {
+          margin: 0 10px;
+          height: 2px;
+        }
+      }
+      .buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        margin-top: 16px;
+        @include msm {
+          max-width: 400px;
+        }
+        @include md {
+          margin-top: 28px;
+          max-width: 450px;
+        }
+        @include xxl {
+          max-width: 500px;
+        }
+        .new-client {
+          @include reverse-primary-button;
+          @extend .mr-12;
+          @include md {
+            margin-right: 16px;
+          }
+        }
+        .repeating-client {
+          @include primary-button;
+        }
+      }
+    }
+  }
+}

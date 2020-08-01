@@ -1,0 +1,185 @@
+// The smallest of the smallest of devices
+@mixin xxs {
+    @media (max-width:#{$screen-xs-min}) {
+     @content;   
+    }
+}
+// Extra Small devices
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+ }
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+ 
+ @mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
+
+ @mixin xxxl {
+    @media (min-width: #{$screen-xxxl-min}) {
+        @content;
+    }
+ }
+// Custom devices + Mui
+@mixin rwd($screen-min,$screen-max) {
+    @media (min-width: $screen-min+'px')and (max-width:$screen-max+'px') {
+        @content;
+    }
+ }
+ @mixin mlg{
+    @media (min-width: #{$mui-screen-lg-min}){
+        @content;
+    }
+}
+ @mixin mmd{
+     @media (min-width: #{$mui-screen-md-min}){
+         @content;
+     }
+ }
+ @mixin msm {
+     @media (min-width: #{$mui-screen-sm-min}){
+         @content;
+     }
+ }
+
+//  Buttons
+
+@mixin primary-button {
+    border-radius: 32px;
+    height: 35px;
+    background-color: $dark-blue;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid $dark-blue;
+    box-shadow: $dark-box-shadow;
+    min-width: 135px;
+    padding: 2px 12px;
+    @include md{
+        height: 35px;
+        padding: 2px 20px;
+        min-width: 150px;
+    }
+    @include xl{
+        height: 40px;
+    }
+    @include xxxl{
+        height: 45px;
+    }
+    span{
+        font-size: 10px;
+        font-family: $heading-font;
+        font-weight: 700;
+        letter-spacing: 1px;
+        @include md{
+            font-size: 11px;
+        }
+    }
+}
+
+
+@mixin square-button {
+    @include primary-button;
+    border-radius: 0;
+}
+@mixin reverse-primary-button {
+    @include primary-button;
+    background-color: white;
+    border: 1px solid white;
+    color: $dark-blue;
+}
+
+@mixin light-blue-button{
+    @include primary-button;
+    background-color: $light-blue;
+    border: 1px solid $light-blue;
+    color: white;
+    span{
+        font-size: 8px;
+        @include md{
+            font-size: 10px;
+        }
+        @include xxxl{
+            font-size: 12px;
+        }
+    }
+}
+
+@mixin orange-button{
+    @include primary-button;
+    background-color: $dark-orange;
+    border: 1px solid $dark-orange;
+    color: white;
+}
+// Cards
+
+
+@mixin primary-card {
+    background-color: transparent;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+
+@mixin secondary-card {
+    background-color: white;
+    color: $dark-black;
+    border-radius: 4px;
+}
+
+@mixin section-container{
+    padding: 16px;
+    @include msm{
+        padding: 24px 32px;
+    }
+    @include mmd{
+        padding: 32px 80px;
+    }
+    @include xl{
+        padding: 32px 120px;
+    }
+}
+
+
+@mixin sub-section-container {
+    padding: 12px;
+    @include msm{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @include lg{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    @include xxl{
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}

@@ -1,25 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// Components
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Videos from "./pages/Videos";
+
+
+import Layout from "./layout";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Layout>
+        <Switch>
+          <Route path="/" exact={true} component={Home} />
+          <Route
+            path="/services"
+            exact={true}
+            component={Services}
+          />
+          <Route
+            path="/about-us"
+            exact={true}
+            component={About}
+          />
+          <Route
+            path="/videos"
+            exact={true}
+            component={Videos}
+          />
+
+          <Route render={() => <h1>Page not found</h1>} />
+        </Switch>
+      </Layout>
+    </Router>
   );
 }
 

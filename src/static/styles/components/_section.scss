@@ -1,0 +1,107 @@
+.section-heading {
+    margin: 24px 0 32px;
+    @at-root .section-header {
+      color: $dark-orange;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: $heading-font;
+      letter-spacing: 1px;
+      margin: 0;
+      @include msm {
+        font-size: 11px;
+      }
+      @include xl {
+        font-size: 12px;
+      }
+      @include xxxl {
+        font-size: 14px;
+      }
+    }
+    .section-subheader {
+      color: $warm-blue;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: $main-font;
+      letter-spacing: 1.2px;
+      @include msm {
+        font-size: 18px;
+      }
+      @include xl {
+        font-size: 20px;
+      }
+      @include xxxl {
+        font-size: 22px;
+      }
+    }
+    .section-description {
+      color: $dark-blue;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $main-font;
+      letter-spacing: 1px;
+      @include msm {
+        font-size: 16px;
+      }
+      @include xxxl {
+        font-size: 18px;
+      }
+    }
+  }
+  
+  .block-description{
+      font-family: $main-font;
+      font-weight: 400;
+      letter-spacing: 1px;
+      @include msm {
+        font-size: 12px;
+      }
+      @include xl {
+        font-size: 14px;
+      }
+      @include xxxl {
+        font-size: 16px;
+      }
+  }
+  .light-card,
+  .dark-card {
+    border-radius: 2px;
+    box-shadow: $main-box-shadow;
+    border: none;
+    margin-bottom: 16px;
+    padding: 12px;
+    .card-heading {
+      font-family: $heading-font;
+      font-weight: 700;
+      letter-spacing: 1px;
+      @include msm {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      @include xl {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+      @include xxxl {
+        font-size: 20px;
+      }
+    }
+    .card-description {
+        @extend .block-description;
+    }
+  }
+  .light-card {
+    background-color: $fade-blue;
+    .card-heading,
+    .card-description {
+      color: $dark-blue;
+    }
+  }
+  .dark-card {
+    background-color: $dark-blue;
+    .card-heading,
+    .card-description {
+      color: white;
+    }
+  }
+  
