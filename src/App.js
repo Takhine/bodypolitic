@@ -7,6 +7,9 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Videos from "./pages/Videos";
 
+// Articles
+import PainRelief from './pages/Articles/PainRelief';
+
 
 import Layout from "./layout";
 import ScrollToTop from "./components/ScrollToTop";
@@ -31,6 +34,11 @@ function App() {
             path="/videos"
             exact={true}
             component={Videos}
+          />
+          <Route
+          path="/pain-treatment"
+          exact={true}
+          component={PainRelief}
           />
 
           <Route render={() => <h1>Page not found</h1>} />

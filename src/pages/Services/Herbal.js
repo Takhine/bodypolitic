@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Button } from "antd";
 import ProgressiveImage from "react-progressive-image";
 import Fade from "react-reveal/Fade";
-import diet from "../../static/images/services/herbal-diet.png";
+import diet from "../../static/images/services/herbal-diet.jpg";
 import dietPlaceholder from "../../static/images/placeholders/herbal-diet-placeholder.jpg";
 
 export default function Herbal() {

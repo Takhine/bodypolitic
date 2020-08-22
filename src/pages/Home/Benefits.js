@@ -3,7 +3,7 @@ import { Row, Col, Card, Button } from "antd";
 import ProgressiveImage from "react-progressive-image";
 import Fade from "react-reveal/Fade";
 import orange from "../../static/images/icons/orange-ellipse.svg";
-import insurance from "../../static/images/home/benefits/insurance.png";
+import insurance from "../../static/images/home/benefits/insurance.jpg";
 import insurancePlaceholder from "../../static/images/placeholders/insurance-placeholder.jpg";
 
 

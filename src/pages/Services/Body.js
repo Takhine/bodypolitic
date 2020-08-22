@@ -3,7 +3,7 @@ import { Row, Col, Button } from "antd";
 import ProgressiveImage from "react-progressive-image";
 import Fade from "react-reveal/Fade";
 
-import bodyAlighnment from "../../static/images/services/body-alignment.png";
+import bodyAlighnment from "../../static/images/services/body-alignment.jpg";
 import bodyAlighnmentPlaceholder from "../../static/images/placeholders/body-alignment-placeholder.jpg"
 export default function Body() {
   return (

@@ -1,0 +1,447 @@
+#article{
+  margin-bottom: 100px;
+}
+.article-banner {
+  @include xl{
+    min-height: 60vh;
+  }
+
+  .image-container {
+    img {
+      width: 100%;
+      margin-top: 60px;
+      @include xl {
+        margin-top: -100px;
+      }
+    }
+
+    .mobile {
+      display: block;
+      @include msm {
+        display: none;
+      }
+    }
+    .desktop {
+      display: none;
+      @include msm {
+        display: block;
+      }
+    }
+  }
+  .banner-row {
+    @include sub-section-container;
+    width: 100%;
+    @include md{
+      position: absolute;
+      top: 150px;
+    }
+    .banner-card {
+      background-color: $fade-blue;
+      border-radius: 4px;
+      box-shadow: $dark-box-shadow;
+      .banner-heading {
+        color: $dark-orange;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: $heading-font;
+        letter-spacing: 1px;
+        margin: 0;
+        @include msm {
+          font-size: 11px;
+        }
+        @include xl {
+          font-size: 12px;
+        }
+        @include xxxl {
+          font-size: 14px;
+        }
+      }
+      .banner-subheading {
+        color: $dark-blue;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: $main-font;
+        letter-spacing: 1.2px;
+        @include msm {
+          font-size: 20px;
+        }
+        @include xl {
+          font-size: 28px;
+          line-height: 1.3;
+        }
+        @include xxl{
+          font-size: 38px;
+        }
+        @include xxxl {
+          font-size: 42px;
+        }
+      }
+      .banner-message {
+        color: $dark-orange;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $main-font;
+        letter-spacing: 1.2px;
+
+        @include xl {
+          font-size: 18px;
+        }
+        @include xxxl {
+          font-size: 20px;
+        }
+      }
+      .banner-description {
+        color: $warm-blue;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: $main-font;
+        letter-spacing: 1.2px;
+        @include msm {
+          font-size: 14px;
+        }
+        @include xl {
+          font-size: 16px;
+        }
+      }
+      .banner-button{
+        @include primary-button;
+      }
+    }
+  }
+}
+
+.disclaimer{
+  background-color: $contrast-blue;
+  padding: 12px;
+  text-align: center;
+  .disclaimer-content{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $heading-font;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 8px;
+    @include md{
+    font-size: 10px;
+    }
+  }
+}
+
+.dark-section,
+.light-section {
+  .section-heading {
+    .section-header {
+      color: $dark-orange;
+      text-align: center;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: $heading-font;
+      letter-spacing: 1px;
+      margin: 0;
+      @include msm {
+        font-size: 11px;
+      }
+      @include xl {
+        font-size: 12px;
+      }
+      @include xxxl {
+        font-size: 14px;
+      }
+    }
+    .section-subheader {
+      color: $warm-blue;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: $main-font;
+      letter-spacing: 1.2px;
+      @include msm {
+        font-size: 18px;
+      }
+      @include xl {
+        font-size: 20px;
+      }
+      @include xxxl {
+        font-size: 22px;
+      }
+    }
+    .section-message{
+      color: $dark-orange;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: $heading-font;
+      letter-spacing: 1px;
+      margin: 0;
+      @include msm {
+        font-size: 14px;
+      }
+      @include xl {
+        font-size: 16px;
+      }
+      @include xxxl {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+// Dark Section
+.dark-section {
+  background-color: $dark-blue;
+  @include xl{
+  min-height: 60vh;
+  }
+  @include section-container;
+  .section-heading {
+    .section-subheader {
+      color: white;
+    }
+  }
+  .section-button {
+  }
+}
+
+// Light Section
+.light-section {
+  @include xl{
+    min-height: 60vh;
+    }  
+  @include section-container;
+
+  .section-heading {
+    .section-header {
+    }
+    .section-subheader {
+      color: $dark-blue;
+    }
+  }
+  .section-button {
+  }
+}
+.white{
+  background-color: white;
+}
+.fade{
+  background-color: $fade-blue;
+}
+
+.article-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  right: 0;
+  background-color: $contrast-blue;
+  text-align: center;
+  padding: 8px;
+  .footer-message{
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    display: none;
+    @include md{
+      display: block;
+    }
+  }
+  .footer-button{
+    @include orange-button;
+    margin: 4px 0;
+  }
+  .footer-contact{
+    color: $dark-orange;
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    @include md{
+      font-size: 14px;
+    }
+    .number{
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+      @include md{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Pain
+.pain-section{
+  .pain-heading{
+    text-align: left;
+    @include md{
+      text-align: center;
+    }
+  }
+}
+.pain-container{
+  .ant-row{
+    @include xxl{
+      margin-left: 32px !important;
+      margin-right: 0 !important;
+    }
+  }
+  .name-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    @include md{
+      margin-bottom: 24px;
+    }
+    @include xl{
+      margin-bottom: 32px;
+    }
+    @include xxl{
+      margin-bottom: 48px;
+    }
+    .icon{
+      margin-right: 8px;
+      width: 50px;
+    }
+  }
+  .pain-name{
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $heading-font;
+    letter-spacing: 1px;
+    margin: 0;
+    @include msm {
+      font-size: 12px;
+    }
+    @include xl {
+      font-size: 15px;
+    }
+    @include xxxl {
+      font-size: 16px;
+    }
+  }
+}
+// testimonials
+.testimonial-content{
+  .client-card{
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: $dark-box-shadow;
+  .ant-card-meta{
+      .client-profile{
+          border: 1px solid $warm-blue;
+          width: 55px;
+          height: 55px;
+      }
+      .card-header{
+          .client-name{
+              margin: 0;
+              font-weight: 600;
+          }
+          .client-date{
+              margin: 0;
+              font-size: 14px;
+              font-weight: 300;
+          }
+      }
+      
+  }
+  .client-message{
+      color: $dark-blue;
+      font-style: italic;
+      margin-top: 12px;
+      @include md{
+          margin-top: 16px;
+      }
+  }
+}
+}
+
+// therapy
+.therapies-container{
+  .therapy-step{
+    height: 100%;
+    .card-heading{
+      text-align: center;
+      @include lg{
+        min-height: 60px;
+      }
+    }
+    .card-description{
+      text-align: center;
+    }
+  }
+}
+
+// process
+.process-row{
+  .ant-col{
+    margin-bottom: 12px;
+  }
+  .process-step{
+    background-color: white;
+    height: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+// working
+.working-container{
+  .ant-col{
+    margin-bottom: 12px;
+  }
+  .working-step{
+    background-color: white;
+    height: 100%;
+    .card-heading{
+      line-height: 1.2;
+      @include md{
+      line-height: 1.3;
+      }
+    }
+  }
+}
+// faqs
+.questions-panel{
+  .ant-collapse{
+    background-color: white;
+    .ant-collapse-item{
+      border-bottom: 1px solid #deb722;
+    }
+    .ant-collapse-header{
+      font-size: 18px;
+      color: #141d4c;
+      font-weight: 400;
+    }
+    .ant-collapse-content-box{
+      font-size: 16px;
+    }
+  }
+}
+
+.google-map{
+  width: 100%;
+  height: 300px;
+  @include md{
+    height: 500px;
+  }
+}
+.address-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    .number, .contact{
+      color: black;
+      font-size: 16px;
+      text-align: center;
+      display: flex;
+      @include md{
+        font-size: 18px;
+      }
+  }
+}

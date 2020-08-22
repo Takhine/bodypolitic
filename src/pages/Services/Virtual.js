@@ -3,8 +3,8 @@ import { Row, Col, Button } from "antd";
 import ProgressiveImage from "react-progressive-image";
 import Fade from "react-reveal/Fade";
 
-import diet from "../../static/images/services/virtual-diet.png";
-import  placeholderDiet from "../../static/images/services/virtual-diet.png";
+import diet from "../../static/images/services/virtual-diet.jpg";
+import  placeholderDiet from "../../static/images/placeholders/virtual-diet-placeholder.jpg";
 export default function Virtual() {
   return (
     <div className="herbal-diet">
