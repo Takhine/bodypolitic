@@ -1,0 +1,44 @@
+#contact {
+    @include section-container;
+    margin-top: 60px;
+    @include msm {
+        margin-top: 65px;
+    }
+    @include xxxl {
+        margin-top: 70px;
+    }
+    .main-heading {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+        @include md {
+            font-size: 24px;
+        }
+        @include xl {
+            font-size: 32px;
+        }
+        @include xxl {
+            font-size: 48px;
+        }
+    }
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        form {
+            width: 100%;
+            max-width: 800px;
+            .ant-row {
+                flex-direction: column;
+                .ant-form-item-label {
+                    margin-right: auto;
+                }
+                .button-container {
+                    .ant-form-item-control-input-content {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}

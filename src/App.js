@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Videos from "./pages/Videos";
+import Contact from "./pages/Contact";
 
 // Articles
 import PainRelief from './pages/Articles/PainRelief';
@@ -36,9 +37,14 @@ function App() {
             component={Videos}
           />
           <Route
-          path="/pain-treatment"
-          exact={true}
-          component={PainRelief}
+            path="/pain-treatment"
+            exact={true}
+            component={PainRelief}
+          />
+          <Route
+            path="/contact"
+            exact={true}
+            component={Contact}
           />
 
           <Route render={() => <h1>Page not found</h1>} />
