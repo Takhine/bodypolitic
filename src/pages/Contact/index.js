@@ -6,20 +6,20 @@ const { TextArea } = Input;
 const successMessage = (messageSuccess) => {
     message.success({
         content: messageSuccess,
-        style: { zIndex: 15000 },
+        style: { zIndex: "15000" },
         duration: 3,
         maxCount: 1,
-        top: 1500
+        top: 1500,
     });
 };
 
 const warningMessage = (errorInfo) => {
     message.error({
         content: errorInfo,
-        style: { zIndex: 15000 },
+        style: { zIndex: "15000" },
         duration: 3,
         maxCount: 1,
-        top: 1500
+        top: 1500,
     });
 };
 
