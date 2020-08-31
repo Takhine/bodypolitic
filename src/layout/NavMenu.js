@@ -44,11 +44,11 @@ const NavMenu = ({ showCovid, hideCovid, showComm, hideComm }) => {
           Covid-19
         </p>
       </li>
-      <li className="navItem">
+      {/* <li className="navItem">
         <NavLink exact to="/contact" activeClassName="selected">
           <p className="nav-link">Contact</p>
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 };

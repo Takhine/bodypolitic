@@ -7,6 +7,9 @@
     @include xxxl {
         margin-top: 70px;
     }
+    .ant-message {
+        z-index: 5000;
+    }
     .main-heading {
         font-size: 18px;
         text-align: center;
