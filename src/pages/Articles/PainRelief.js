@@ -8,14 +8,15 @@ import Therapies from "./FirstTemplate/Therapies";
 import Process from "./FirstTemplate/Process";
 import Faq from "./FirstTemplate/Faq";
 import Location from "./FirstTemplate/Location";
+import Contact from "./FirstTemplate/Contact";
 
 import { Events } from "react-scroll";
 
 const PainRelief = () => {
   useEffect(() => {
-    Events.scrollEvent.register("begin", function (to, element) {});
+    Events.scrollEvent.register("begin", function (to, element) { });
 
-    Events.scrollEvent.register("end", function (to, element) {});
+    Events.scrollEvent.register("end", function (to, element) { });
 
     return () => {
       Events.scrollEvent.remove("begin");
@@ -27,7 +28,7 @@ const PainRelief = () => {
     <div id="article">
       <Banner />
       <div className="disclaimer">
-      <p className="disclaimer-content">* Individual results vary. No guarantee of specific results is warranted or implied and your results will depend on many factors (full disclaimer).</p>
+        <p className="disclaimer-content">* Individual results vary. No guarantee of specific results is warranted or implied and your results will depend on many factors (full disclaimer).</p>
       </div>
       <Pains />
       <Testimonial />
@@ -36,6 +37,7 @@ const PainRelief = () => {
       <Process />
       <Faq />
       <Location />
+      <Contact />
     </div>
   );
 };

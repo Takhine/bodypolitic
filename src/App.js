@@ -41,11 +41,6 @@ function App() {
             exact={true}
             component={PainRelief}
           />
-          <Route
-            path="/contact"
-            exact={true}
-            component={Contact}
-          />
 
           <Route render={() => <h1>Page not found</h1>} />
         </Switch>

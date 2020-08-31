@@ -36,7 +36,7 @@ export default function Banner() {
 
             <Link
               activeClass="active"
-              to="working"
+              to="contact"
               spy={true}
               smooth={true}
               duration={500}
@@ -44,6 +44,8 @@ export default function Banner() {
             >
               <Button className="banner-button">Learn More</Button>
             </Link>
+
+
           </Card>
         </Col>
       </Row>
