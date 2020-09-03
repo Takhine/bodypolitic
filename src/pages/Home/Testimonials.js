@@ -2,9 +2,9 @@ import React from "react";
 import { Row, Col, Card, Avatar } from "antd";
 import Fade from "react-reveal/Fade";
 
-import client1 from  '../../static/images/home/clients/client1.png'
-import client2 from  '../../static/images/home/clients/client2.png'
-import client3 from  '../../static/images/home/clients/client3.png'
+import client1 from "../../static/images/home/clients/client1.png";
+import client2 from "../../static/images/home/clients/client2.png";
+import client3 from "../../static/images/home/clients/client3.png";
 
 const { Meta } = Card;
 
@@ -78,6 +78,48 @@ export default function Testimonials() {
             </Fade>
           </Col>
         ))}
+        <Col xs={24}>
+          <Fade>
+            <Card className="client-card">
+              <Meta
+                avatar={
+                  <Avatar
+                    size="large"
+                    className="client-profile"
+                    src={client1}
+                    alt="Ruah Client Feedback"
+                  />
+                }
+                title={
+                  <div className="card-header">
+                    <h4 className="client-name">Ryme Katkhouda</h4>
+                    <p className="client-date">Aug 01, 2020</p>
+                  </div>
+                }
+              />
+              <p className="client-message">
+                "This is a raving review of the expertise, results & work ethics
+                of Mona Eldahry who has been working on me since she started
+                mastering her acupuncture & started doctorate in Chinese
+                medicine. Without it I would still suffer from overwhelming hay
+                fever, allergies & debilitating migraines that started at 17 2-3
+                times a week! My immune system would still have been a trap for
+                every flu in town. She also fixed my back pain, numbness in my
+                right hand fingers because of a neck disk injury, head colds &
+                sinus, fatigue, depression, lethargy, sleeplessness ... I was a
+                mess after a major fall and 911 exposure in the lower east side
+                of Manhattan & Wall street! She is putting me back together one
+                visit at a time. Her consultations are thorough & more
+                scientifically based than most doctors I used to go see!! Her
+                diagnostics, reparative acupuncture & herbal healings & cures
+                are on the money. She is up to date on the latest solid
+                modalities! And she sure knows how yo run a space, a program, a
+                team!! I can’t wait to checkout her new practice space. I give
+                her thumbs up!!"
+              </p>
+            </Card>
+          </Fade>
+        </Col>
       </Row>
     </div>
   );

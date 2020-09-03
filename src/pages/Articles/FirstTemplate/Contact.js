@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Input, Button, message } from "antd";
+import ReactPixel from 'react-facebook-pixel';
 
 const { TextArea } = Input;
 
@@ -23,6 +24,11 @@ const warningMessage = (errorInfo) => {
     });
 };
 
+const trackContact = () => {
+    ReactPixel.trackCustom('LearnMoreClick', {
+      click_date: new Date()
+    });    
+  }
 export default function Contact() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -36,6 +42,7 @@ export default function Contact() {
 
     const submitForm = (e) => {
         // create a new XMLHttpRequest
+        trackContact();
         var xhr = new XMLHttpRequest();
 
         // get a callback when the server responds

@@ -2,6 +2,7 @@ import React  from "react";
 import {  useScrollTrigger, Slide } from "@material-ui/core";
 import {Button} from 'antd';
 // context
+import ReactPixel from 'react-facebook-pixel';
 
 
 const ShowonScroll = (props) => {
@@ -16,6 +17,12 @@ const ShowonScroll = (props) => {
     </Slide>
   );
 };
+
+const trackLearnMore = () => {
+  ReactPixel.trackCustom('LearnMoreClick', {
+    click_date: new Date()
+  });    
+}
 const Footer = ({ props }) => {
   return (
     <ShowonScroll {...props}>
@@ -29,7 +36,7 @@ const Footer = ({ props }) => {
           target="blank"
           rel="noopener noreferrer"
         >
-          <Button className="footer-button">Free Consultation</Button>
+          <Button className="footer-button" onClick={()=>trackLearnMore()}>Free Consultation</Button>
         </a>
         <p className="footer-contact">Or, just call <a href="tel:(347) 709-0030"><span className="number">(347)709-0030</span></a> and we'll be happy to answer your questions.</p>
       </div>

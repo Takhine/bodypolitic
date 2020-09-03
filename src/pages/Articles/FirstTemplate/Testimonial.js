@@ -16,12 +16,12 @@ const clients = [
       },
       {
         id: 2,
-        name: "Ryme Katkhouda",
+        name: "Ruah",
         date: "Aug 01, 2020",
         md: 12,
         message: `"I highly recommend Mona Eldahry, she has an incredible healing touch and wonderfully caring presence that is truly impressive.  Thanks to her acupuncture and body work techniques I felt an incredible release physically, mentally and emotionally.  I got so much out of our session - actual healing for my back injury and feeling a release and relaxation in my entire body.  I have already scheduled my next appointment!"`,
         img: client1,
-        alt: "Ryme Katkhouda Client Feedback",
+        alt: "Ruah Client Feedback",
       },
 ]
 export default function Testimonials() {
