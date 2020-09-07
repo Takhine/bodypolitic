@@ -35,7 +35,7 @@ const communityData = [
     title: "Initial",
     supporter: "75",
     basic_rate: "60",
-    low_income: "60",
+    low_income: "40",
   },
   {
     key: 2,
