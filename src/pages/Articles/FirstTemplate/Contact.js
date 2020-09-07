@@ -25,16 +25,16 @@ const warningMessage = (errorInfo) => {
 };
 
 const trackContact = () => {
-    ReactPixel.trackCustom('LearnMoreClick', {
-      click_date: new Date()
-    });    
-  }
+    ReactPixel.trackCustom('ContactFormClick', {
+        click_date: new Date()
+    });
+}
+
 export default function Contact() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [contact, setContact] = useState('')
     const [message, setMessage] = useState('')
-    const [emailStatus, setEmailStatus] = useState('')
 
     const [form] = Form.useForm()
 
@@ -42,13 +42,11 @@ export default function Contact() {
 
     const submitForm = (e) => {
         // create a new XMLHttpRequest
-        trackContact();
         var xhr = new XMLHttpRequest();
-
+        trackContact();
         // get a callback when the server responds
         xhr.addEventListener('load', () => {
             // update the response state and the step
-            setEmailStatus(xhr.responseText);
 
             if (xhr.responseText === 'Message has been sent') {
                 // message.success(emailStatus)
@@ -68,7 +66,7 @@ export default function Contact() {
         });
 
         // open the request with the verb and the url
-        xhr.open('GET', 'http://localhost/phpMail/contact.php?sendto=' + email +
+        xhr.open('GET', 'https://bodypolitic.info/contact.php?sendto=' + email +
             '&name=' + name + '&contact=' + contact + '&message=' + message);
 
         // send the request

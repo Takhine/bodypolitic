@@ -1,0 +1,24 @@
+#pricing{
+    .details{
+        @include sub-section-container;
+        margin: 32px 0;
+        .detail-heading{
+            text-align: center;
+            color: $dark-blue;
+            @extend .section-subheader;
+            @include xl{
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+        .detail-subheading{
+            text-align: center;
+            text-align: center;
+            margin: auto;
+            max-width: 680px;
+            color: $dark-blue;
+            margin-bottom: 48px;
+            font-size: 18px;
+        }
+    }   
+}

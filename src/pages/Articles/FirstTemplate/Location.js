@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row, Col, Divider } from "antd";
 
 export default function Location() {
@@ -14,6 +14,7 @@ export default function Location() {
       <Row gutter={12}>
         <Col xs={24} md={18}>
           <iframe
+          title="Body Politic"
             className="google-map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12100.396244443682!2d-73.9916863!3d40.6938159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x117cca2b201e8029!2sBody%20Politic%20Acupuncture!5e0!3m2!1sen!2sin!4v1598085134895!5m2!1sen!2sin"
             frameBorder="0"

@@ -62,6 +62,11 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink exact to="/pricing">
+                <p className="link">Pricing</p>
+              </NavLink>
+            </li>
+            <li>
               <NavLink exact to="/videos">
                 <p className="link">Video Gallery</p>
               </NavLink>

@@ -1,0 +1,32 @@
+#pricing{
+    .covid-note{
+        @include sub-section-container;
+        padding-bottom: 32px;
+        background-color: $dark-blue;
+        @include xl{
+        padding-bottom: 64px;
+        padding-top: 64px;
+        }
+        .heading{
+            @extend .section-header;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .description{
+            @extend .section-description;
+            color: white;
+            margin-bottom: 18px;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: $heading-font;            
+            @include xl{
+                font-size: 18px;
+            }
+            a{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+}

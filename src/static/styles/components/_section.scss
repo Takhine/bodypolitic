@@ -18,7 +18,7 @@
         font-size: 14px;
       }
     }
-    .section-subheader {
+    @at-root .section-subheader {
       color: $warm-blue;
       font-size: 16px;
       font-weight: 600;

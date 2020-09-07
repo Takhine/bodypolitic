@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Videos from "./pages/Videos";
+import Pricing from "./pages/Pricing";
 
 // Articles
 import PainRelief from './pages/Articles/PainRelief';
@@ -34,6 +35,11 @@ function App() {
             path="/videos"
             exact={true}
             component={Videos}
+          />
+          <Route
+            path="/pricing"
+            exact={true}
+            component={Pricing}
           />
           <Route
             path="/pain-treatment"

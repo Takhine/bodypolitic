@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Row, Col, Button, Collapse } from "antd";
+import React from "react";
+import { Collapse } from "antd";
 const { Panel } = Collapse;
 
 const faqs = [

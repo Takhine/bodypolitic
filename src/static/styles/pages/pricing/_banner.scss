@@ -1,0 +1,56 @@
+#pricing{
+    .pricing-banner{
+        background-color: $fade-blue;
+        @include sub-section-container;
+        @include md {
+            padding-top: 100px;
+          }
+          @include xxl {
+            padding-top: 120px;
+          }
+        .logo-container{
+            display: flex;
+            .logo{
+                width: 100%;
+                max-width: 350px;
+                margin: auto;
+            }
+    }
+    .tables-container{
+        .table-header{
+            @extend .section-subheader;
+            color: $dark-orange;
+            margin-bottom: 24px;
+            @include xl{
+                font-size: 24px;
+            }
+        }
+        .table-subheader{
+            @extend .section-header;
+            color: $dark-blue;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .table{
+            .ant-table-thead, .ant-table-tbody{
+                .ant-table-cell{
+                    background-color: $dark-blue;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    font-family: $heading-font;
+                    padding: 24px 16px;
+                }
+            }
+            .ant-table-tbody{
+                tr.ant-table-row{
+                    &:hover{
+                        color: $dark-blue;
+                    }
+                }
+            }
+        }
+    }
+    }
+}

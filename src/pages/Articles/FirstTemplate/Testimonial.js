@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Row, Col, Button, Card, Avatar } from "antd";
+import React from "react";
+import { Card, Avatar } from "antd";
 import client1 from  '../../../static/images/home/clients/client1.png'
 
 const { Meta } = Card;

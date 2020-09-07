@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Row, Col, Button } from "antd";
+import React from "react";
+import { Row, Col } from "antd";
 import leaf from "../../../static/images/articles/list-icon.svg";
 import FadeIn from "react-fade-in";
 
