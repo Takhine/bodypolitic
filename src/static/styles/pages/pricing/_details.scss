@@ -1,7 +1,8 @@
 #pricing{
     .details{
         @include sub-section-container;
-        margin: 32px 0;
+        padding-top: 32px;
+        background-color: $fade-blue;
         .detail-heading{
             text-align: center;
             color: $dark-blue;

@@ -2,6 +2,8 @@ import React from "react";
 import Banner from "./Banner";
 import CovidNote from "./CovidNote";
 import Details from "./Details";
+import About from "./About";
+
 
 const Pricing = () => {
   return (
@@ -14,6 +16,7 @@ const Pricing = () => {
       </div>
       <CovidNote />
       <Details />
+      <About />
     </div>
   );
 };

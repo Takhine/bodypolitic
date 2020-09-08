@@ -31,13 +31,6 @@ const NavMenu = ({ showCovid, hideCovid, showComm, hideComm }) => {
         </NavLink>
       </li>
       <li className="navItem">
-      <NavLink exact to="/pricing" activeClassName="selected">
-        <p onClick={() => handleClick()} className="nav-link">
-          Pricing
-        </p>
-      </NavLink>
-    </li>
-      <li className="navItem">
         <NavLink exact to="/videos" activeClassName="selected">
           <p className="nav-link">Videos</p>
         </NavLink>
@@ -56,6 +49,13 @@ const NavMenu = ({ showCovid, hideCovid, showComm, hideComm }) => {
           <p className="nav-link">Contact</p>
         </NavLink>
       </li> */}
+      <li className="navItem">
+      <NavLink exact to="/pricing" activeClassName="selected">
+        <p onClick={() => handleClick()} className="nav-link">
+          Pricing
+        </p>
+      </NavLink>
+    </li>
     </ul>
   );
 };

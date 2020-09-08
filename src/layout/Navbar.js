@@ -154,12 +154,11 @@ const Navbar = (props) => {
               <p className="link">Services</p>
             </NavLink>
           </Menu.Item>
-          <Menu.Item key="/pricing" onClick={() => hideDrawer()}>
-          <NavLink exact to="/pricing" activeClassName="selected">
-            <p className="link">Pricing</p>
-          </NavLink>
-        </Menu.Item>
-          <Menu.Item key="/videos" activeClassName="selected" onClick={() => hideDrawer()}>
+          <Menu.Item
+            key="/videos"
+            activeClassName="selected"
+            onClick={() => hideDrawer()}
+          >
             <NavLink exact to="/videos">
               <p className="link">Videos</p>
             </NavLink>
@@ -173,6 +172,11 @@ const Navbar = (props) => {
           >
             <a className="link">Community</a>
           </Menu.Item>*/}
+          <Menu.Item key="/pricing" onClick={() => hideDrawer()}>
+            <NavLink exact to="/pricing" activeClassName="selected">
+              <p className="link">Pricing</p>
+            </NavLink>
+          </Menu.Item>
           <Menu.Item
             key="/Consultation"
             onClick={() => {

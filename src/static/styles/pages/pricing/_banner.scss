@@ -30,6 +30,10 @@
             color: $dark-blue;
             margin-bottom: 12px;
             font-size: 14px;
+            span{
+                font-size: 12px;
+                text-transform: capitalize;
+            }
         }
         .table{
             .ant-table-thead, .ant-table-tbody{
@@ -40,7 +44,8 @@
                     font-weight: 600;
                     letter-spacing: 1px;
                     font-family: $heading-font;
-                    padding: 24px 16px;
+                    padding: 24px 10px;
+                    font-size: 12px;
                 }
             }
             .ant-table-tbody{

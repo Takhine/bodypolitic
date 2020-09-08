@@ -1,0 +1,23 @@
+.about-pricing{
+    @include sub-section-container;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .about-subheader{
+        text-align: center;
+        color: $dark-blue;
+        @extend .section-subheader;
+        @include xl{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    .about-heading{
+        @extend .section-header;
+        font-size: 24px;
+    }
+    .description{
+        color: #141D4C;
+        margin-bottom: 48px;
+        font-size: 18px;
+    }
+}

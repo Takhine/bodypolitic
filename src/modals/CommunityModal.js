@@ -21,7 +21,7 @@ export default function CommunityModal({ visible, hideComm }) {
         </h2>
         <h3 className="section-header">Community Acupuncture</h3>
         <p className="section-description">
-          6-12 people receive treatment in the same room. If you like the idea
+          3-4 people receive treatment in the same room. If you like the idea
           of relaxing with others, this is for you. And since acupuncture
           affects our qi, or energy, in addition to the physical body, many
           believe that the energy cultivated in group acupuncture settings can
