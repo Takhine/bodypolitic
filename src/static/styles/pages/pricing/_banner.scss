@@ -1,61 +1,69 @@
-#pricing{
-    .pricing-banner{
+#pricing {
+    .pricing-banner {
         background-color: $fade-blue;
         @include sub-section-container;
         @include md {
             padding-top: 100px;
-          }
-          @include xxl {
+        }
+        @include xxl {
             padding-top: 120px;
-          }
-        .logo-container{
+        }
+        .logo-container {
             display: flex;
-            .logo{
+            .logo {
                 width: 100%;
                 max-width: 350px;
                 margin: auto;
-            }
-    }
-    .tables-container{
-        .table-header{
-            @extend .section-subheader;
-            color: $dark-orange;
-            margin-bottom: 24px;
-            @include xl{
-                font-size: 24px;
-            }
-        }
-        .table-subheader{
-            @extend .section-header;
-            color: $dark-blue;
-            margin-bottom: 12px;
-            font-size: 14px;
-            span{
-                font-size: 12px;
-                text-transform: capitalize;
-            }
-        }
-        .table{
-            .ant-table-thead, .ant-table-tbody{
-                .ant-table-cell{
-                    background-color: $dark-blue;
-                    color: white;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    font-family: $heading-font;
-                    padding: 24px 10px;
-                    font-size: 12px;
+                @include xs {
+                    padding-top: 15%;
+                }
+                @include sm {
+                    padding-top: 0%;
                 }
             }
-            .ant-table-tbody{
-                tr.ant-table-row{
-                    &:hover{
-                        color: $dark-blue;
+        }
+        .tables-container {
+            .table-header {
+                @extend .section-subheader;
+                color: $dark-orange;
+                margin-bottom: 24px;
+                @include xl {
+                    font-size: 24px;
+                }
+            }
+            .table-subheader {
+                @extend .section-header;
+                color: $dark-blue;
+                margin-bottom: 12px;
+                font-size: 14px;
+                min-height: 40px;
+                span {
+                    font-size: 12px;
+                    text-transform: capitalize;
+                }
+            }
+            .table {
+                .ant-table-thead,
+                .ant-table-tbody {
+                    .ant-table-cell {
+                        background-color: $dark-blue;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        font-family: $heading-font;
+                        padding: 24px 10px;
+                        font-size: 12px;
+                    }
+                }
+                .ant-table-tbody {
+                    tr.ant-table-row {
+                        &:hover {
+                            color: $dark-blue;
+                        }
                     }
                 }
             }
         }
-    }
     }
 }

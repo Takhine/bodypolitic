@@ -6,11 +6,7 @@ export default function About() {
       <h2 className="about-subheader" style={{ textAlign: "center" }}>
         About Sliding Scale Pricing
       </h2>{" "}
-      <p className="description">
-        At your first visit to the clinic, we store your credit or debit card
-        information securely. We then take payment remotely 24 hours prior to
-        each appointment.
-      </p>
+
       <h2 className="about-heading">What is it?</h2>
       <p className="description">
         A sliding scale is a handy way to meet people where they're at
@@ -20,10 +16,10 @@ export default function About() {
       </p>
       <h2 className="about-heading">How Does it Work?</h2>
       <p className="description"
-      style={{
-        marginBottom: '8px',
-        fontWeight: '600'
-      }}
+        style={{
+          marginBottom: '8px',
+          fontWeight: '600'
+        }}
       >We have three rates:</p>
       <ul className="description">
         <li>The Basic Rate allows us to cover our basic expenses.</li>
