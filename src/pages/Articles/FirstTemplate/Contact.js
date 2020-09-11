@@ -24,11 +24,11 @@ const warningMessage = (errorInfo) => {
     });
 };
 
-const trackContact = () => {
-    ReactPixel.trackCustom('ContactFormClick', {
-        click_date: new Date()
-    });
-}
+// const trackContact = () => {
+//     ReactPixel.trackCustom('ContactFormClick', {
+//         click_date: new Date()
+//     });
+// }
 
 export default function Contact() {
     const [name, setName] = useState('')
@@ -43,7 +43,7 @@ export default function Contact() {
     const submitForm = (e) => {
         // create a new XMLHttpRequest
         var xhr = new XMLHttpRequest();
-        trackContact();
+        // trackContact();
         // get a callback when the server responds
         xhr.addEventListener('load', () => {
             // update the response state and the step
